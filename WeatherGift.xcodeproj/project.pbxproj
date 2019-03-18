@@ -76,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				E8DACA8422340C7E0073440F /* AppDelegate.swift */,
-				E8DACA9A223414E70073440F /* PageVC.swift */,
 				E8DACA9C22400F0B0073440F /* WeatherLocation.swift */,
+				E8DACA9A223414E70073440F /* PageVC.swift */,
 				E8DACA9622340D5A0073440F /* DetailVC.swift */,
 				E8DACA982234127E0073440F /* ListVC.swift */,
 				E8DACA8822340C7E0073440F /* Main.storyboard */,

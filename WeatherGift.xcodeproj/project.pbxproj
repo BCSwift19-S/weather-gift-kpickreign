@@ -17,6 +17,7 @@
 		E8DACA9B223414E70073440F /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DACA9A223414E70073440F /* PageVC.swift */; };
 		E8DACA9D22400F0C0073440F /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DACA9C22400F0B0073440F /* WeatherLocation.swift */; };
 		E8DACA9F22401EAE0073440F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DACA9E22401EAE0073440F /* Constants.swift */; };
+		E8DACAC1224860DD0073440F /* DayWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DACAC0224860DD0073440F /* DayWeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E8DACA9A223414E70073440F /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		E8DACA9C22400F0B0073440F /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 		E8DACA9E22401EAE0073440F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E8DACAC0224860DD0073440F /* DayWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E8DACA9E22401EAE0073440F /* Constants.swift */,
 				E8DACA9A223414E70073440F /* PageVC.swift */,
 				E8DACA9622340D5A0073440F /* DetailVC.swift */,
+				E8DACAC0224860DD0073440F /* DayWeatherCell.swift */,
 				E8DACA982234127E0073440F /* ListVC.swift */,
 				E8DACA8822340C7E0073440F /* Main.storyboard */,
 				E8DACA8B22340C810073440F /* Assets.xcassets */,
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DACAC1224860DD0073440F /* DayWeatherCell.swift in Sources */,
 				E8DACA9D22400F0C0073440F /* WeatherLocation.swift in Sources */,
 				E8DACA992234127E0073440F /* ListVC.swift in Sources */,
 				E8DACA9B223414E70073440F /* PageVC.swift in Sources */,

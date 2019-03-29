@@ -16,11 +16,94 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="YKe-wk-3Ay" customClass="PageVC" customModule="WeatherGift" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="e3C-Ha-kgl" kind="presentation" identifier="ToListVC" id="eRS-W0-WAc"/>
+                        <segue destination="pzZ-A4-foH" kind="presentation" identifier="ToAboutVC" id="2Wi-WR-BDN"/>
                     </connections>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8CC-NP-R5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="87" y="-558"/>
+        </scene>
+        <!--AboutVC-->
+        <scene sceneID="5EM-g8-mla">
+            <objects>
+                <viewController id="pzZ-A4-foH" customClass="AboutVC" customModule="WeatherGift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="okJ-XG-nXF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGS-Oq-cxh">
+                                <rect key="frame" x="20" y="821" width="61" height="41"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="pzZ-A4-foH" eventType="touchUpInside" id="q1B-a6-0fC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherGift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT9-ey-Mt1">
+                                <rect key="frame" x="20" y="103" width="374" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="oyv-8E-9nZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="fx8-hv-o5j">
+                                <rect key="frame" x="20" y="160" width="374" height="408"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made with love for you by Kelly Pickreign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oi5-Yh-m8t">
+                                <rect key="frame" x="20" y="576" width="374" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="YdL-RX-ICe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="powered-by-google-dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="5VS-XO-SSm">
+                                <rect key="frame" x="20" y="652" width="187" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="a6Y-xb-LHI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="powered-by-google-light.png" translatesAutoresizingMaskIntoConstraints="NO" id="CrV-FA-M3c">
+                                <rect key="frame" x="215" y="652" width="179" height="128"/>
+                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="Ixw-Id-j9f"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gT9-ey-Mt1" firstAttribute="trailing" secondItem="okJ-XG-nXF" secondAttribute="trailingMargin" id="3u2-zq-6ud"/>
+                            <constraint firstItem="Oi5-Yh-m8t" firstAttribute="trailing" secondItem="CrV-FA-M3c" secondAttribute="trailing" id="7A9-kV-d1Q"/>
+                            <constraint firstItem="fx8-hv-o5j" firstAttribute="leading" secondItem="Oi5-Yh-m8t" secondAttribute="leading" id="8f8-ju-Bbx"/>
+                            <constraint firstItem="BGS-Oq-cxh" firstAttribute="top" secondItem="5VS-XO-SSm" secondAttribute="bottom" constant="41" id="92g-b9-zFH"/>
+                            <constraint firstItem="fx8-hv-o5j" firstAttribute="top" secondItem="gT9-ey-Mt1" secondAttribute="bottom" constant="8" symbolic="YES" id="CR3-hQ-BAH"/>
+                            <constraint firstItem="5VS-XO-SSm" firstAttribute="top" secondItem="Oi5-Yh-m8t" secondAttribute="bottom" constant="8" symbolic="YES" id="DkP-G8-ues"/>
+                            <constraint firstItem="Oi5-Yh-m8t" firstAttribute="top" secondItem="fx8-hv-o5j" secondAttribute="bottom" constant="8" symbolic="YES" id="H3y-kP-2P4"/>
+                            <constraint firstItem="gT9-ey-Mt1" firstAttribute="leading" secondItem="fx8-hv-o5j" secondAttribute="leading" id="OlL-zc-ad3"/>
+                            <constraint firstItem="gT9-ey-Mt1" firstAttribute="top" secondItem="ZhA-a7-Db0" secondAttribute="top" constant="59" id="P9u-xk-rpJ"/>
+                            <constraint firstItem="CrV-FA-M3c" firstAttribute="leading" secondItem="5VS-XO-SSm" secondAttribute="trailing" constant="8" symbolic="YES" id="Udj-S7-1Vj"/>
+                            <constraint firstItem="fx8-hv-o5j" firstAttribute="trailing" secondItem="Oi5-Yh-m8t" secondAttribute="trailing" id="WBm-QV-bCM"/>
+                            <constraint firstItem="ZhA-a7-Db0" firstAttribute="trailing" secondItem="BGS-Oq-cxh" secondAttribute="trailing" constant="333" id="evC-Oc-sXw"/>
+                            <constraint firstItem="5VS-XO-SSm" firstAttribute="top" secondItem="CrV-FA-M3c" secondAttribute="top" id="gLc-90-0Hf"/>
+                            <constraint firstItem="Oi5-Yh-m8t" firstAttribute="leading" secondItem="5VS-XO-SSm" secondAttribute="leading" id="i5J-16-5M1"/>
+                            <constraint firstItem="BGS-Oq-cxh" firstAttribute="bottom" secondItem="ZhA-a7-Db0" secondAttribute="bottom" id="iTj-gu-N8D"/>
+                            <constraint firstItem="5VS-XO-SSm" firstAttribute="leading" secondItem="BGS-Oq-cxh" secondAttribute="leading" id="loA-8T-6ID"/>
+                            <constraint firstItem="ZhA-a7-Db0" firstAttribute="bottom" secondItem="CrV-FA-M3c" secondAttribute="bottom" constant="82" id="r0K-b5-8ky"/>
+                            <constraint firstItem="gT9-ey-Mt1" firstAttribute="trailing" secondItem="fx8-hv-o5j" secondAttribute="trailing" id="rSY-Ta-Xu7"/>
+                            <constraint firstItem="5VS-XO-SSm" firstAttribute="bottom" secondItem="CrV-FA-M3c" secondAttribute="bottom" id="shT-Xw-Kpg"/>
+                            <constraint firstItem="gT9-ey-Mt1" firstAttribute="leading" secondItem="okJ-XG-nXF" secondAttribute="leadingMargin" id="tKz-4L-L0V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZhA-a7-Db0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Zj-TP-dMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-787" y="173"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="tne-QT-ifu">
@@ -200,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86.956521739130437" y="133.92857142857142"/>
+            <point key="canvasLocation" x="87" y="173"/>
         </scene>
         <!--ListVC-->
         <scene sceneID="sGQ-Tq-mmH">
@@ -269,6 +352,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="clear-day" width="103" height="109"/>
+        <image name="powered-by-google-dark.png" width="120" height="14"/>
+        <image name="powered-by-google-light.png" width="120" height="14"/>
         <image name="raindrop" width="18" height="20"/>
     </resources>
 </document>

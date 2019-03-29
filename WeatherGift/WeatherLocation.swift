@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WeatherLocation {
+class WeatherLocation: Codable {
     var name = ""
     var coordinates = ""
     
@@ -16,4 +16,7 @@ class WeatherLocation {
         self.name = name
         self.coordinates = coordinates
     }
+    
+    
 }
+
